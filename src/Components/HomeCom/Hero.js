@@ -1,9 +1,9 @@
 "use client";
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import hero1 from '../../Assests/hero1.png'
-import hero2 from '../../Assests/hero2.png'
-import Image from 'next/image'
+// import hero1 from '../../Assests/hero1.png'
+// import hero2 from '../../Assests/hero2.png'
+// import Image from 'next/image'
 import "@/app/Hero.css"
 import MovingComponent from 'react-moving-text'
 import 'swiper/css';
@@ -12,7 +12,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 
-import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, EffectFade, Pagination } from 'swiper/modules';
 
 export default function Hero() {
   const letters = 'Premium'.split('');
