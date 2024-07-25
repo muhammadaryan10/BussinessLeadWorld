@@ -1,0 +1,26 @@
+.swiper-button-prev,
+.swiper-button-next {
+    /* top: unset !important;
+    right: unset !important;
+    left: unset !important;
+    bottom: unset !important; */
+    position: absolute !important;
+    border: none !important;
+}
+
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    color: black;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: #0d7dfc;
+
+}
+
+.swiper-button-prev:hover:after,
+.swiper-button-next:hover:after {
+    color: white;
+}

@@ -1,0 +1,283 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page-transition {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.page-transition1 {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
+.themeColor {
+  color: #0d7dfc;
+}
+
+.themeBackground {
+  background-color: #0d7dfc;
+}
+
+.themetext {
+  color: #0e0d0f;
+}
+
+.lighttext {
+  color: #878787
+}
+
+.img {
+  color: #0d7dfc !important;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  border: 2px solid #878787;
+}
+
+::-webkit-scrollbar-track {
+  background: #f6f6f6;
+  /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0d7dfc;
+  border-radius: 100px;
+  /* Color of the scrollbar thumb */
+}
+
+.partner {
+  background-image: url('../Assests//partner.jpg');
+  /* height: ; */
+  max-height: 800px;
+}
+
+.acheive {
+  background-image: url('../Assests/CTA2.png');
+  background-position: start;
+  background-size: cover;
+  height: 70vh;
+  max-height: 700px;
+  max-width: 100rem;
+  background-repeat: no-repeat;
+}
+
+.Testimonial {
+  background-image: url('../Assests/testimonial.png');
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  display: flex;
+  justify-content: center;
+}
+
+.themeHover:hover {
+  background-color: #0d7dfc;
+  color: white;
+  transition: all;
+}
+
+.hero {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/* .hero::after{
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 10%;
+  right: 0;
+  bottom: 0;
+  background-image: url('../Assests/NewsLetter.png'); /* Replace with your image URL */
+
+.mySwiper2 {
+  margin-left: 10% !important;
+}
+
+.mySwiperScroll {
+  overflow-y: scroll !important;
+  padding-right: 0px !important;
+}
+
+.CTA {
+  /* background-image: url('../Assests/NewsLetter.png'); */
+  background-repeat: no-repeat;
+  background-size: 180px;
+  position: relative;
+}
+
+.CTA:before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 10%;
+  right: 0;
+  bottom: 0;
+  background-image: url('../Assests/NewsLetter.png');
+  /* Replace with your image URL */
+  opacity: 0.4;
+  /* Adjust the opacity as needed */
+  z-index: 0;
+}
+
+.contact {
+  background-size: 680px;
+  background-image: url('../Assests/contact.png');
+  /* Replace with your image URL */
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+
+
+
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  padding-top: 22px;
+  font-family: "Poppins", sans-serif;
+  justify-content: start;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -30px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #fff;
+}
+
+
+/* Service Pages CSS  */
+/* MCA Live TransferLead */
+.servicesBanner {
+  background-image: url('../Assests/servicesbanner4.jpg');
+  /* background-color: rgba(0, 0, 0, 0.658); */
+  background-size: cover;
+  background-position: start;
+  justify-content: center;
+  /* Centers items horizontally */
+  align-items: center;
+}
+
+
+.why {
+  background-image: url('../Assests/why.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.target{
+  background-image: url('../Assests/target.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.growth{
+  background-image: url('../Assests/growthbg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+/* Conatct Page Css  */
+
+
+.contactBanner{
+  background-image: url('../Assests/contactBanner.jpg');
+  /* background-color: rgba(0, 0, 0, 0.658); */
+  background-size: cover;
+  background-position: start;
+  justify-content: center;
+  /* Centers items horizontally */
+  align-items: center;
+}
+.contact {
+  background-image: url('../Assests/contact2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
